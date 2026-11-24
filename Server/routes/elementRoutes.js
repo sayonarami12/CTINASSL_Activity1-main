@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Element = require('../models/Element'); // Make sure this is exactly 'Element'
+const Element = require('../models/Element'); 
 
 console.log("Checking Element Model:", Element); 
 
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
 // CREATE a new element
 router.post('/', async (req, res) => {
-    const element = new Element({ // THIS is where your error was happening
+    const element = new Element({ 
         name: req.body.name,
         symbol: req.body.symbol,
         atomicNumber: req.body.atomicNumber
