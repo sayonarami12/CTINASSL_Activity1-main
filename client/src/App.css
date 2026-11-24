@@ -1,0 +1,256 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.website {
+  background: #f1f3f5;
+  color: #333;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.highlight {
+  color: #607d8b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  background: #455a64;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #cfd8dc;
+}
+
+.nav-button,
+.primary-button {
+  background: #607d8b;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 55px 8%;
+  background: white;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #37474f;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.secondary-button {
+  color: #455a64;
+  border: 1px solid #607d8b;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero-visual {
+  flex: 1;
+  min-height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #edf2f4;
+  border-radius: 6px;
+}
+
+.glow,
+.bond,
+.floating-label {
+  display: none;
+}
+
+.molecule {
+  width: 220px;
+  height: 220px;
+  position: relative;
+}
+
+.atom {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.atom-center {
+  width: 85px;
+  height: 85px;
+  background: #607d8b;
+  top: 65px;
+  left: 68px;
+}
+
+.atom-left {
+  background: #90a4ae;
+  top: 5px;
+  left: 5px;
+}
+
+.atom-right {
+  background: #90a4ae;
+  bottom: 5px;
+  right: 5px;
+}
+
+.features {
+  padding: 45px 8%;
+  text-align: center;
+}
+
+.section-heading h2,
+.about h2 {
+  color: #37474f;
+  margin-bottom: 12px;
+}
+
+.section-heading p,
+.feature-card p,
+.about p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: #607d8b;
+}
+
+.feature-card h3 {
+  color: #455a64;
+}
+
+.about {
+  display: flex;
+  gap: 35px;
+  padding: 40px 8%;
+  background: white;
+}
+
+.about > div,
+.about > p {
+  flex: 1;
+}
+
+footer {
+  background: #455a64;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about,
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
